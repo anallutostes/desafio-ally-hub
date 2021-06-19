@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Ally Hub</title>
+    <!--MEU ESTILO-->
+    <link rel="stylesheet" type="text/css" href="css/style3.css">
+    <!-- Última versão CSS compilada e minificada -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="header-1">
+        <div class="seta-1">
+            <img src="css/img/arrow_back.svg">
+        </div>
+
+        <div class="seta-2">
+            <img src="css/img/arrow_forward.svg">
+        </div>
+
+        <div class="close">
+            <img src="css/img/close.svg">
+        </div>
+
+        <div class="home">
+            <img src="css/img/home.svg">
+        </div>
+
+        <div id="barra-endereco">
+            <input type="text" id="txt-end" placeholder="https://www." />
+        </div>
+
+        <div id="busca-1">
+            <input type="text" id="txt-busca" placeholder="Procurar..." />
+        </div>
+
+    </div>
+
+    <div class="logo">
+        <img src="css/img/logo.svg">
+    </div>
+
+    <div class="container">
+        <form class="form-inline cursos-form">
+
+            <div class="form-group">
+                <label for="lblNome">Nome do curso</label>
+                <input type="text" class="form-control" id="nome" placeholder="Insira o nome do curso" required />
+            </div>
+
+            <div class="form-group">
+                <label for="lblInicio">Data de início</label>
+                <input type="text" class="form-control" id="inicio" placeholder="Quando começa o curso?" required />
+            </div>
+
+            <div class="form-group">
+                <label for="lblFim">Data de término</label>
+                <input type="text" class="form-control" id="fim" placeholder="Quando termina o curso?" required />
+            </div>
+
+            <div class="form-group">
+                <label for="lblDuracao">Duração</label>
+                <input type="text" class="form-control" id="duracao" placeholder="Qual o tempo de duração?" required />
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-default">Cadastrar</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">Lista de Cursos</div>
+
+            <div class="panel-body">
+                <p>
+
+
+                <form class="form-inline">
+
+                    <div class="form-group">
+
+                        <input type="text" class="form-control" id="filtro" placeholder="Qual curso você procura?">
+
+                    </div>
+
+                    <button type="submit" class="btn btn-info">Procurar</button>
+
+                </form>
+                </p>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                        <tr>
+                            <td>Nome do curso</td>
+                            <td>Data de início</td>
+                            <td>Data de término</td>
+                            <td>Duração</td>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>

@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Desafio Ally Hub</title>
+    <!--MEU ESTILO-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="header-1">
+        <div class="seta-1">
+            <img src="css/img/arrow_back.svg">
+        </div>
+
+        <div class="seta-2">
+            <img src="css/img/arrow_forward.svg">
+        </div>
+
+        <div class="close">
+            <img src="css/img/close.svg">
+        </div>
+
+        <div class="home">
+            <img src="css/img/home.svg">
+        </div>
+
+        <div id="barra-endereco">
+            <input type="text" id="txt-end" placeholder="https://www." />
+        </div>
+
+        <div id="busca-1">
+            <input type="text" id="txt-busca" placeholder="Procurar..." />
+        </div>
+
+    </div>
+
+    <div class="fundo">
+        <img src="css/img/Single page.svg">
+    </div>
+
+    <div class="logo">
+        <img src="css/img/logo.svg">
+    </div>
+
+    <form id="cadastro" autocomplete: off>
+
+        <legend id="legend">Cadastro de cursos</legend>
+
+        <div class="campo">
+            <label for="curso"><strong>Nome do curso:</strong></label>
+            <input type="text" name="curso" id="curso" required />
+        </div>
+
+        <div class="campo">
+            <label for="inicio"><strong>Data de início:</strong></label>
+            <input type="text" name="inicio" id="inicio" required />
+        </div>
+
+        <div class="campo">
+            <label for="fim"><strong>Data de término:</strong></label>
+            <input type="text" name="fim" id="fim" required />
+        </div>
+
+        <div class="campo">
+            <label for="duracao"><strong>Duração:</strong></label>
+            <input type="text" name="duracao" id="duracao" required />
+        </div>
+
+        <div>
+            <label><strong>Descrição:</strong></label>
+            <textarea row="10" style="width: 30em" id="descricao" name="descricao"></textarea>
+        </div>
+
+        <div class="botao">
+            <button type="button" id="btnCadastrar" onclick="cadastraCurso()">Cadastrar</button>
+        </div>
+
+        <table id="tabelacursos">
+
+            <caption>Lista de Cursos</caption>
+
+            <div id="busca-2">
+                <input type="text" id="txt-busca-2" placeholder="Buscar por nome..." />
+            </div>
+
+            <tr>
+                <td>Nome</td>
+                <td>Duração</td>
+                <td>Data de início</td>
+                <td>Data de término</td>
+            </tr>
+
+            <tr>
+                <td>Inglês+Design Gráfico</td>
+                <td>52 semanas</td>
+                <td>01/01/2021</td>
+                <td>31/12/2021</td>
+            </tr>
+
+            <tr>
+                <td>Inglês+Gastronomia</td>
+                <td>52 semanas</td>
+                <td>01/01/2021</td>
+                <td>31/12/2021</td>
+            </tr>
+
+            <tr>
+                <td>Idioma+Moda</td>
+                <td>52 semanas</td>
+                <td>01/01/2021</td>
+                <td>31/12/2021</td>
+            </tr>
+
+        </table>
+
+
+        <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>
